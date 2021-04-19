@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 
-<link rel="stylesheet" href="mystyle.css">
+<link rel="stylesheet" href="stylesheet.css">
 
 <?php
 if (session_status() == PHP_SESSION_NONE) {
@@ -23,12 +23,12 @@ require '../model/selection_model.php'
 
 
 <main>
-        <section id= "ribbon">
+        <section class= "ribbon">
 
         <form id="CharName" method="Post" action="../model/sheet_model.php" name= "CharName">
         <label for ="CharName"> Please Select a Character </label> <br>
          <select name="CharName" id="CharName">
-        <option value=""> Select Character </option>
+        <option value=""> Character </option>
 <?php
  while($row = $query->fetch()) {
 ?>
@@ -42,7 +42,7 @@ require '../model/selection_model.php'
             }
         ?>
         <input type="submit" value="submit" >
-
+        </form>
     </main>
 </body>
 </html>

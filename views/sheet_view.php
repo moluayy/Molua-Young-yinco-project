@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 
-<link rel="stylesheet" href="mystyle.css">
+<link rel="stylesheet" href="stylesheet.css">
 
 <?php
 if (session_status() == PHP_SESSION_NONE) {
@@ -27,18 +27,23 @@ if (session_status() == PHP_SESSION_NONE) {
     ?>
 
 <main>
-        <section id= "ribbon">
-            <?php
-                echo $Seeming, " ";
-                echo $Court, " ";
-                echo $Kith, " ";
-                echo $Name;
-            ?>
-        </section>
+    <section class="sheet">
+
+        <table= class="majorAtts">
+
+        <tr>
+            <td> <?php echo $Seeming ?> </td>
+            <td> <?php echo $Court ?> </td>
+            <td> <?php echo $Kith ?> </td>
+            <td> <?php echo $Name ?> </td>
+        </tr>
+
+        </table>
+    </section>
     </main>
 <?php
-session_unset();
-session_destroy();
+//session_unset();
+//session_destroy();
 ?>
 </body>
 </html>

@@ -10,13 +10,36 @@
   font-style: italic;
 }
 
-  #ribbon{
+/*second custom font used in Changeling Products*/
+
+@font-face {
+  font-family: ChangelingBody;
+  src: url(./fonts/CalsonAntique.woff);
+}
+
+@font-face {
+  font-family: ChangelingBody;
+  src: url(./fonts/CaslonAntique-Bold.woff);
+  font-style: bold;
+}
+
+
+  .ribbon{
     background-image: url("ChangelingCover.png");
+
     color: white;
     font-family: ChangelingHeader;
-    word-spacing: 100px;
     font-size: 30px;
-    text-align: center;
+    word-spacing: 15px;
+    letter-spacing: 14px;
+    height:100%;
+    padding-top: 70px;
+    height:600px;
+    /*in order for text to be legible, four shadows are used to give the appearance of a black outline*/
+    text-shadow: -2px -2px 0 #000,  
+                  -2px -2px 0 #000,
+                  -2px -2px 0 #000,
+                  -2px -2px 0 #000;
     }
 /* styling for the Character Creation segments, incorperating official graphics*/
     .creation{
@@ -34,6 +57,21 @@
                       -2px -2px 0 #000,
                       -2px -2px 0 #000;
         }
+
+        .sheet{
+          background-image: url("ChangelingCover.png");
+    
+            color: white;
+            font-family: ChangelingHeader;
+            font-size: 150%;
+            word-spacing: 15px;
+            letter-spacing: 14px;
+            /*in order for text to be legible, four shadows are used to give the appearance of a black outline*/
+            text-shadow: -2px -2px 0 #000,  
+                          -2px -2px 0 #000,
+                          -2px -2px 0 #000,
+                          -2px -2px 0 #000;
+            }
 
       form{
         clear: both;
@@ -57,4 +95,11 @@
         background-image: url("ChangelingCover.png");
         width: 100%;
         height: 15%;
+      }
+
+      .majorAtts{
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto; 
+        text-align: center;
       }
