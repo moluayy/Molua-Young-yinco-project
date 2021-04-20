@@ -29,7 +29,7 @@ if (session_status() == PHP_SESSION_NONE) {
 <main>
     <section class="sheet">
 
-        <table= class="majorAtts">
+        <table class="majorAtts">
 
         <tr>
             <td> <?php echo $Seeming ?> </td>
@@ -37,7 +37,54 @@ if (session_status() == PHP_SESSION_NONE) {
             <td> <?php echo $Kith ?> </td>
             <td> <?php echo $Name ?> </td>
         </tr>
+        </table>
 
+        <table class= "attributes">
+
+        <tr>
+            <th>Physical </th>
+            <th> Social</th>
+            <th> Mental</th>
+        </tr>
+
+        <tr>
+            <td> Strength <div class= "rating"> 1 </div> </td>
+            <td> Intelligence <div class= "rating"> 1 </div> </td>
+            <td> Presence <div class= "rating"> 1 </div> </td>
+        </tr>
+
+        <tr>
+            <td> Dexterity <div class= "rating"> 1 </div> </td>
+            <td> Wits <div class= "rating"> 1 </div> </td>
+            <td> Manipulation <div class= "rating"> 1 </div> </td>
+        </tr>
+
+        <tr>
+            <td> Stamina <div class= "rating"> 3 </div> </td>
+            <td> Resolve <div class= "rating"> 1 </div> </td>
+            <td> Composure <div class= "rating"> 1 </div> </td>
+        </tr>
+
+        </table>
+<!-- each row alternates between physical, mental, social, to stay in balance with the attributes table-->
+        <table class="skills">
+        <tr>
+            <td> Athletics <div class= "rating"> 3 </div> </td>
+            <td> Academics <div class= "rating"> 1 </div> </td>
+            <td> Animal Ken <div class= "rating"> 1 </div> </td>
+        </tr>
+
+        <tr>
+            <td> Computer <div class= "rating"> 3 </div> </td>
+            <td> Brawl <div class= "rating"> 1 </div> </td>
+            <td> Empathy <div class= "rating"> 1 </div> </td>
+        </tr>
+
+        <tr>
+            <td> Crafts <div class= "rating"> 3 </div> </td>
+            <td> Drive <div class= "rating"> 1 </div> </td>
+            <td> Expression <div class= "rating"> 1 </div> </td>
+        </tr>
         </table>
     </section>
     </main>

@@ -58,20 +58,7 @@
                       -2px -2px 0 #000;
         }
 
-        .sheet{
-          background-image: url("ChangelingCover.png");
-    
-            color: white;
-            font-family: ChangelingHeader;
-            font-size: 150%;
-            word-spacing: 15px;
-            letter-spacing: 14px;
-            /*in order for text to be legible, four shadows are used to give the appearance of a black outline*/
-            text-shadow: -2px -2px 0 #000,  
-                          -2px -2px 0 #000,
-                          -2px -2px 0 #000,
-                          -2px -2px 0 #000;
-            }
+        
 
       form{
         clear: both;
@@ -103,3 +90,41 @@
         margin-right: auto; 
         text-align: center;
       }
+      .sheet{
+        background-color: #18551b;
+  
+          color: white;
+          font-family: ChangelingBody;
+          font-size: 150%;
+          word-spacing: 15px;
+          letter-spacing: 14px;
+          /*in order for text to be legible, four shadows are used to give the appearance of a black outline*/
+          text-shadow: 2px 2px 0 #000, 2px 2px 0 #000, 2px 2px 0 #000, -1px -1px 0 #000;
+          }
+
+      .attributes, .skills {
+        text-align:left;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto; 
+        background-color: #185400;
+        border-top: 5%;
+        border-style: solid;
+        border-color: white;
+      }
+
+      .attributes th{
+        font-size: 150%;
+      }
+
+      .attributes td, .skills td{
+        text-align: left;
+
+      }
+      .rating{
+        float:right;
+        margin-right: 35%;
+        margin-left: 1%;
+      }
+
+    

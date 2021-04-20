@@ -23,7 +23,7 @@
         <form method ="post" action =../model/creation3_model.php>
 
         Name
-        <input type="text" name="Name">
+        <input type="text" name="CharName">
     <h2>
         Next, write down your aspirations, touchstones and merits
     </h2>
@@ -36,6 +36,12 @@
 
     <label for="Merits">Merits:</label>
     <input type="text" name="Merits">
+
+    <label for="Needle">Needle:</label>
+    <input type="text" name="Needle">
+
+        <label for="Thread">Thread:</label>
+    <input type="text" name="Needle">    
 
     ​<input type="submit" value="Submit">
 
