@@ -49,20 +49,20 @@ if (session_status() == PHP_SESSION_NONE) {
 
         <tr>
             <td> Strength <div class= "rating"> 1 </div> </td>
-            <td> Intelligence <div class= "rating"> 1 </div> </td>
             <td> Presence <div class= "rating"> 1 </div> </td>
+            <td> Intelligence <div class= "rating"> 1 </div> </td>
         </tr>
 
         <tr>
             <td> Dexterity <div class= "rating"> 1 </div> </td>
-            <td> Wits <div class= "rating"> 1 </div> </td>
             <td> Manipulation <div class= "rating"> 1 </div> </td>
+            <td> Wits <div class= "rating"> 1 </div> </td>
         </tr>
 
         <tr>
             <td> Stamina <div class= "rating"> 3 </div> </td>
-            <td> Resolve <div class= "rating"> 1 </div> </td>
             <td> Composure <div class= "rating"> 1 </div> </td>
+            <td> Resolve <div class= "rating"> 1 </div> </td>
         </tr>
 
         </table>
@@ -70,20 +70,50 @@ if (session_status() == PHP_SESSION_NONE) {
         <table class="skills">
         <tr>
             <td> Athletics <div class= "rating"> 3 </div> </td>
-            <td> Academics <div class= "rating"> 1 </div> </td>
             <td> Animal Ken <div class= "rating"> 1 </div> </td>
+            <td> Academics <div class= "rating"> 1 </div> </td>
         </tr>
 
         <tr>
-            <td> Computer <div class= "rating"> 3 </div> </td>
-            <td> Brawl <div class= "rating"> 1 </div> </td>
+            <td> Brawl <div class= "rating"> 3 </div> </td>
             <td> Empathy <div class= "rating"> 1 </div> </td>
+            <td> Computer <div class= "rating"> 1 </div> </td>
         </tr>
 
         <tr>
-            <td> Crafts <div class= "rating"> 3 </div> </td>
-            <td> Drive <div class= "rating"> 1 </div> </td>
+            <td> Drive <div class= "rating"> 3 </div> </td>
             <td> Expression <div class= "rating"> 1 </div> </td>
+            <td> Crafts <div class= "rating"> 1 </div> </td>
+        </tr>
+
+        <tr>
+            <td> Firearms <div class= "rating"> 3 </div> </td>
+            <td> Intimidation <div class= "rating"> 1 </div> </td>
+            <td> Investigation <div class= "rating"> 1 </div> </td>
+        </tr>
+
+        <tr>
+            <td> Larceny <div class= "rating"> 3 </div> </td>
+            <td> Persuasion <div class= "rating"> 1 </div> </td>
+            <td> Medicine <div class= "rating"> 1 </div> </td>
+        </tr>
+
+        <tr>
+            <td> Stealth <div class= "rating"> 3 </div> </td>
+            <td> Socialize <div class= "rating"> 1 </div> </td>
+            <td> Occult <div class= "rating"> 1 </div> </td>
+        </tr>
+
+        <tr>
+            <td> Survival <div class= "rating"> 3 </div> </td>
+            <td> Streetwise <div class= "rating"> 1 </div> </td>
+            <td> Politics <div class= "rating"> 1 </div> </td>
+        </tr>
+
+        <tr>
+            <td> Weaponry <div class= "rating"> 3 </div> </td>
+            <td> Subterfuge <div class= "rating"> 1 </div> </td>
+            <td> Science <div class= "rating"> 1 </div> </td>
         </tr>
         </table>
     </section>
