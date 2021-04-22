@@ -23,7 +23,13 @@ if (session_status() == PHP_SESSION_NONE) {
     $Seeming = $_SESSION['Seeming'];
     $Court = $_SESSION['Court'];
     $Kith= $_SESSION['Kith'];
-    $Name= $_SESSION['CharName']
+    $Name= $_SESSION['CharName'];
+    $_SESSION['SeemingReg']= "Sword";
+    $_SESSION['FaveReg']= "Crown";
+    $_SESSION['Stam']= "2";
+    $_SESSION['Ath']= "3";
+
+
     ?>
 
 <main>
@@ -115,6 +121,30 @@ if (session_status() == PHP_SESSION_NONE) {
             <td> Subterfuge <div class= "rating"> 1 </div> </td>
             <td> Science <div class= "rating"> 1 </div> </td>
         </tr>
+        </table>
+
+        <table class="majorAtts">
+
+        <tr>
+            <td> Needle: Caregiver </td>
+            <td> Thread: Joy </td>
+            <td> Wyrd: 3 </td>
+            <td> Clarity Cap: 4 </td>
+        </tr>
+
+        </table>
+
+        <table class= "merits">
+        <tr>
+        <td> They are flowers that take from you the power to compromise with wickedness and mediocrity, to be comfortable with evil and others’ suffering, in exchange for renewed life. </td>
+        <td> <?php echo $_SESSION['SeemingReg'] . " " . $_SESSION['FaveReg'] ?> </br>
+        <?php echo $_SESSION['Stam'] + $_SESSION['Ath']; ?> </br>
+            <?php require 'seeming_case.php' ?>
+
+         </td>
+
+        </tr>
+
         </table>
     </section>
     </main>

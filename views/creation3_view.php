@@ -25,7 +25,7 @@
         Name
         <input type="text" name="CharName">
     <h2>
-        Next, write down your aspirations, touchstones and merits
+        Next, write down your aspirations, touchstones, Needle and Thread and merits
     </h2>
 
     <label for="Aspirations">Aspirations:</label>

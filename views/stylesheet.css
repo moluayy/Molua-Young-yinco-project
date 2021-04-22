@@ -91,7 +91,7 @@
         text-align: center;
       }
       .sheet{
-        background-color: #18551b;
+        background-color: #28430a;
   
           color: white;
           font-family: ChangelingBody;
@@ -99,7 +99,7 @@
           word-spacing: 15px;
           letter-spacing: 14px;
           /*in order for text to be legible, four shadows are used to give the appearance of a black outline*/
-          text-shadow: 2px 2px 0 #000, 2px 2px 0 #000, 2px 2px 0 #000, -1px -1px 0 #000;
+          text-shadow: 2px 2px 0 #0f0c08, 2px 2px 0 #0f0c08, 2px 2px 0 #0f0c08, -1px -1px 0 #0f0c08;
           }
 
       .attributes, .skills {
@@ -107,7 +107,7 @@
         width: 100%;
         margin-left: auto;
         margin-right: auto; 
-        background-color: #185400;
+        background-color: #507b00;
         border-top: 5%;
         border-style: solid;
         border-color: white;
@@ -126,5 +126,13 @@
         margin-right: 35%;
         margin-left: 1%;
       }
-
+      .merits{
+        width: 100%;
+        float:left;
+        background-color: #95c22b;
+        margin-top: 1%;
+        text-align:left;
+        margin-left: auto;
+        margin-right: auto; 
+      }
     
