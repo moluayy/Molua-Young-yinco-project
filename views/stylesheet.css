@@ -135,4 +135,8 @@
         margin-left: auto;
         margin-right: auto; 
       }
+
+      .merits td{
+        width: 20%;
+      }
     

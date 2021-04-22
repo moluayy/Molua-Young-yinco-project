@@ -137,12 +137,19 @@ if (session_status() == PHP_SESSION_NONE) {
         <table class= "merits">
         <tr>
         <td> They are flowers that take from you the power to compromise with wickedness and mediocrity, to be comfortable with evil and others’ suffering, in exchange for renewed life. </td>
+       
         <td> <?php echo $_SESSION['SeemingReg'] . " " . $_SESSION['FaveReg'] ?> </br>
         <?php echo $_SESSION['Stam'] + $_SESSION['Ath']; ?> </br>
-            <?php require 'seeming_case.php' ?>
+            <?php require 'regalia_switch.php' ?>
 
          </td>
-
+        
+        <td> Willpower 5 </br>
+            Health 6 </br>
+            Glamour 14 </br>
+            Defence 3 </br>
+            Speed 7 </br>
+             </td>
         </tr>
 
         </table>
