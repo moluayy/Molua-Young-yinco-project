@@ -98,6 +98,7 @@
           font-size: 150%;
           word-spacing: 15px;
           letter-spacing: 14px;
+          list-style-type:none;
           /*in order for text to be legible, four shadows are used to give the appearance of a black outline*/
           text-shadow: 2px 2px 0 #0f0c08, 2px 2px 0 #0f0c08, 2px 2px 0 #0f0c08, -1px -1px 0 #0f0c08;
           }
@@ -138,5 +139,9 @@
 
       .merits td{
         width: 20%;
+      }
+
+      .merits h2{
+        text-align:left;
       }
     

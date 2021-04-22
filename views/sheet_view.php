@@ -138,20 +138,41 @@ if (session_status() == PHP_SESSION_NONE) {
         <tr>
         <td> They are flowers that take from you the power to compromise with wickedness and mediocrity, to be comfortable with evil and others’ suffering, in exchange for renewed life. </td>
        
-        <td> <?php echo $_SESSION['SeemingReg'] . " " . $_SESSION['FaveReg'] ?> </br>
-        <?php echo $_SESSION['Stam'] + $_SESSION['Ath']; ?> </br>
-            <?php require 'regalia_switch.php' ?>
+        <td> 
+       
+        <?php require 'seeming_blessing_switch.php' ?>
 
-         </td>
+        </td>
         
-        <td> Willpower 5 </br>
-            Health 6 </br>
-            Glamour 14 </br>
-            Defence 3 </br>
-            Speed 7 </br>
-             </td>
+        <td>
+            <?php require 'seeming_curse_switch.php'?>
+        </td>
         </tr>
 
+        </table>
+
+        <table class="majorAtts">
+            <tr>
+            <td> Willpower 5 </td>
+            <td> Health 6 </td>
+            <td>Glamour 14 </td>
+            <td>Defence 3 </td>
+            <td>Speed 7 </td>
+            </tr>
+        </table>
+
+        <table class="merits">
+            <tr>
+                <td> <h2> Arcadian Contracts</h2> </br> 
+                <?php echo $_SESSION['SeemingReg'] . " " . $_SESSION['FaveReg'] ?> </br>
+                <?php echo $_SESSION['Stam'] + $_SESSION['Ath']; ?> </br>
+                <?php require 'regalia_switch.php' ?> </td>
+
+                <td> <h2> Court Contracts </h2>
+                <?php echo $_SESSION['Court'] ?>
+                
+                 </td>
+            </tr>
         </table>
     </section>
     </main>
