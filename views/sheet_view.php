@@ -168,10 +168,9 @@ if (session_status() == PHP_SESSION_NONE) {
                 <?php echo $_SESSION['Stam'] + $_SESSION['Ath']; ?> </br>
                 <?php require 'regalia_switch.php' ?> </td>
 
-                <td> <h2> Court Contracts </h2>
-                <?php echo $_SESSION['Court'] ?>
-                
-                 </td>
+                <td> <h2> Court Contracts </h2> </br>
+                <?php echo $_SESSION['Court'] ?> </br>
+                <?php require 'court_switch.php' ?> </td>
             </tr>
         </table>
     </section>
