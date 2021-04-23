@@ -47,7 +47,6 @@
 
         
         color: white;
-        height: 100%;
         font-family: ChangelingHeader;
         font-size: 30px;
         word-spacing: 15px;
@@ -94,11 +93,6 @@
         margin-left: 10px;
       }
       
-      input[type=text] {
-        padding: 20px 20px;
-        margin: 2px 0;
-        height: 15px
-      }
 
 
       h3, h2{
