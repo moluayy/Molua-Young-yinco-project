@@ -18,19 +18,21 @@ if (session_status() == PHP_SESSION_NONE) {
 
 <?php
 
-$CharName= $_POST['CharName'];
+$_SESSION['CharName']= $_POST['CharName'];
+$CharName= $_SESSION['CharName'];
 
 $query= $dbConn->prepare("SELECT * FROM major_traits WHERE CharName = ? ");
 $params= array($CharName);
 $query->execute($params);
 
 while($row = $query->fetch()) {
-    $_SESSION['CharName']= $row['CharName'];
+
     $_SESSION['Seeming']= $row['Seeming'];
     $_SESSION['Court']= $row['Court'];
     $_SESSION['Kith']= $row['Kith'];
+    $_SESSION['Wyrd']= $row['Wyrd'];
 }
 echo $_SESSION['Court'];
-header('LOCATION:../views/sheet_view.php');
+header('LOCATION:../model/sheet_model2.php');
 
 ?>

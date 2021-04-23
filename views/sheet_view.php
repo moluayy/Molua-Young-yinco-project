@@ -24,8 +24,7 @@ if (session_status() == PHP_SESSION_NONE) {
     $Court = $_SESSION['Court'];
     $Kith= $_SESSION['Kith'];
     $Name= $_SESSION['CharName'];
-    $_SESSION['SeemingReg']= "Sword";
-    $_SESSION['FaveReg']= "Crown";
+
     $_SESSION['Stam']= "2";
     $_SESSION['Ath']= "3";
 
@@ -54,89 +53,95 @@ if (session_status() == PHP_SESSION_NONE) {
         </tr>
 
         <tr>
-            <td> Strength <div class= "rating"> 1 </div> </td>
-            <td> Presence <div class= "rating"> 1 </div> </td>
-            <td> Intelligence <div class= "rating"> 1 </div> </td>
+            <td> Strength <div class= "rating"> <?php echo $_SESSION['Strength'] ?> </div> </td>
+            <td> Presence <div class= "rating"> <?php echo $_SESSION['Presence'] ?> </div> </td>
+            <td> Intelligence <div class= "rating"> <?php echo $_SESSION['Intelligence'] ?> </div> </td>
         </tr>
 
         <tr>
-            <td> Dexterity <div class= "rating"> 1 </div> </td>
-            <td> Manipulation <div class= "rating"> 1 </div> </td>
-            <td> Wits <div class= "rating"> 1 </div> </td>
+            <td> Dexterity <div class= "rating"> <?php echo $_SESSION['Dexterity'] ?> </div> </td>
+            <td> Manipulation <div class= "rating"> <?php echo $_SESSION['Manipulation'] ?> </div> </td>
+            <td> Wits <div class= "rating"> <?php echo $_SESSION['Wits'] ?> </div> </td>
         </tr>
 
         <tr>
-            <td> Stamina <div class= "rating"> 3 </div> </td>
-            <td> Composure <div class= "rating"> 1 </div> </td>
-            <td> Resolve <div class= "rating"> 1 </div> </td>
+            <td> Stamina <div class= "rating"> <?php echo $_SESSION['Stamina'] ?> </div> </td>
+            <td> Composure <div class= "rating"> <?php echo $_SESSION['Composure'] ?> </div> </td>
+            <td> Resolve <div class= "rating"> <?php echo $_SESSION['Resolve'] ?> </div> </td>
         </tr>
 
         </table>
 <!-- each row alternates between physical, mental, social, to stay in balance with the attributes table-->
         <table class="skills">
         <tr>
-            <td> Athletics <div class= "rating"> 3 </div> </td>
-            <td> Animal Ken <div class= "rating"> 1 </div> </td>
-            <td> Academics <div class= "rating"> 1 </div> </td>
+            <td> Athletics <div class= "rating"> <?php echo $_SESSION['Athletics'] ?> </div> </td>
+            <td> Animal Ken <div class= "rating"> <?php echo $_SESSION['AnimalKen'] ?> </div> </td>
+            <td> Academics <div class= "rating"> <?php echo $_SESSION['Academics'] ?> </div> </td>
         </tr>
 
         <tr>
-            <td> Brawl <div class= "rating"> 3 </div> </td>
-            <td> Empathy <div class= "rating"> 1 </div> </td>
-            <td> Computer <div class= "rating"> 1 </div> </td>
+            <td> Brawl <div class= "rating"> <?php echo $_SESSION['Brawl'] ?> </div> </td>
+            <td> Empathy <div class= "rating"> <?php echo $_SESSION['Empathy'] ?> </div> </td>
+            <td> Computer <div class= "rating"> <?php echo $_SESSION['Computer'] ?> </div> </td>
         </tr>
 
         <tr>
-            <td> Drive <div class= "rating"> 3 </div> </td>
-            <td> Expression <div class= "rating"> 1 </div> </td>
-            <td> Crafts <div class= "rating"> 1 </div> </td>
+            <td> Drive <div class= "rating"> <?php echo $_SESSION['Drive'] ?> </div> </td>
+            <td> Expression <div class= "rating"> <?php echo $_SESSION['Expression'] ?> </div> </td>
+            <td> Crafts <div class= "rating"> <?php echo  $_SESSION['Crafts'] ?> </div> </td>
         </tr>
 
         <tr>
-            <td> Firearms <div class= "rating"> 3 </div> </td>
-            <td> Intimidation <div class= "rating"> 1 </div> </td>
-            <td> Investigation <div class= "rating"> 1 </div> </td>
+            <td> Firearms <div class= "rating"> <?php echo $_SESSION['Firearms'] ?> </div> </td>
+            <td> Intimidation <div class= "rating"> <?php echo $_SESSION['Intimidation'] ?> </div> </td>
+            <td> Investigation <div class= "rating"> <?php echo $_SESSION['Investigation'] ?> </div> </td>
         </tr>
 
         <tr>
-            <td> Larceny <div class= "rating"> 3 </div> </td>
-            <td> Persuasion <div class= "rating"> 1 </div> </td>
-            <td> Medicine <div class= "rating"> 1 </div> </td>
+            <td> Larceny <div class= "rating"> <?php echo $_SESSION['Larceny'] ?> </div> </td>
+            <td> Persuasion <div class= "rating"> <?php echo $_SESSION['Persuasion'] ?> </div> </td>
+            <td> Medicine <div class= "rating"> <?php echo $_SESSION['Medicine'] ?> </div> </td>
         </tr>
 
         <tr>
-            <td> Stealth <div class= "rating"> 3 </div> </td>
-            <td> Socialize <div class= "rating"> 1 </div> </td>
-            <td> Occult <div class= "rating"> 1 </div> </td>
+            <td> Stealth <div class= "rating"> <?php echo $_SESSION['Stealth'] ?> </div> </td>
+            <td> Socialize <div class= "rating"> <?php echo $_SESSION['Socialize'] ?> </div> </td>
+            <td> Occult <div class= "rating"> <?php echo $_SESSION['Occult'] ?> </div> </td>
         </tr>
 
         <tr>
-            <td> Survival <div class= "rating"> 3 </div> </td>
-            <td> Streetwise <div class= "rating"> 1 </div> </td>
-            <td> Politics <div class= "rating"> 1 </div> </td>
+            <td> Survival <div class= "rating"> <?php echo $_SESSION['Survival'] ?> </div> </td>
+            <td> Streetwise <div class= "rating"> <?php echo $_SESSION['Streetwise'] ?> </div> </td>
+            <td> Politics <div class= "rating"> <?php echo $_SESSION['Politics'] ?> </div> </td>
         </tr>
 
         <tr>
-            <td> Weaponry <div class= "rating"> 3 </div> </td>
-            <td> Subterfuge <div class= "rating"> 1 </div> </td>
-            <td> Science <div class= "rating"> 1 </div> </td>
+            <td> Weaponry <div class= "rating"> <?php echo $_SESSION['Weaponry'] ?> </div> </td>
+            <td> Subterfuge <div class= "rating"> <?php echo $_SESSION['Subterfuge'] ?> </div> </td>
+            <td> Science <div class= "rating"> <?php echo $_SESSION['Science'] ?> </div> </td>
         </tr>
         </table>
 
         <table class="majorAtts">
 
         <tr>
-            <td> Needle: Caregiver </td>
-            <td> Thread: Joy </td>
-            <td> Wyrd: 3 </td>
-            <td> Clarity Cap: 4 </td>
+            <td> Needle:<?php echo $_SESSION['Needle']?> </td>
+            <td> Thread: <?php echo $_SESSION['Thread']?> </td>
+            <td> Wyrd: <?php echo $_SESSION['Wyrd']?> </td>
+            <td> Clarity Cap: <?php echo $_SESSION['Resolve'] + $_SESSION['Composure']?> </td>
         </tr>
 
         </table>
 
         <table class= "merits">
         <tr>
-        <td> They are flowers that take from you the power to compromise with wickedness and mediocrity, to be comfortable with evil and others’ suffering, in exchange for renewed life. </td>
+        <td> 
+        <h3> Aspirations</h3> </br>
+        <?php echo $_SESSION['Aspirations'];?>
+        
+        <h3> Merits</h3> </br>
+        <?php echo $_SESSION['Merits'];?>
+         </td>
        
         <td> 
        
@@ -153,18 +158,18 @@ if (session_status() == PHP_SESSION_NONE) {
 
         <table class="majorAtts">
             <tr>
-            <td> Willpower 5 </td>
-            <td> Health 6 </td>
-            <td>Glamour 14 </td>
-            <td>Defence 3 </td>
-            <td>Speed 7 </td>
+            <td> Willpower <?php echo $_SESSION['Resolve'] + $_SESSION['Composure']?> </td>
+            <td> Health <?php echo $_SESSION['Stamina'] + 5?> </td>
+            <td>Glamour/turn <?php require 'wyrd_switch.php' ?> </td>
+            <td>Defence <?php require 'defence_switch.php'?> </td>
+            <td>Speed <?php echo $_SESSION['Strength'] + $_SESSION['Dexterity'] +5?> </td>
             </tr>
         </table>
 
         <table class="merits">
             <tr>
                 <td> <h2> Arcadian Contracts</h2> </br> 
-                <?php echo $_SESSION['SeemingReg'] . " " . $_SESSION['FaveReg'] ?> </br>
+                <?php echo $_SESSION['SeemingReg'] . ", " . $_SESSION['FaveReg'] ?> </br>
                 <?php echo $_SESSION['Stam'] + $_SESSION['Ath']; ?> </br>
                 <?php require 'regalia_switch.php' ?> </td>
 

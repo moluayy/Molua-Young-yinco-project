@@ -19,25 +19,31 @@ if (session_status() == PHP_SESSION_NONE) {
 
 <?php
 
-if (isset($_POST["Seeming"])){
-    $Seeming= htmlspecialchars($_POST["Seeming"]);
+if (isset($_POST["Aspirations"])){
+    $Aspirations= htmlspecialchars($_POST["Aspirations"]);
     }
-if (isset($_POST["Court"])){
-$Court= htmlspecialchars($_POST["Court"]);
+if (isset($_POST["Touchstones"])){
+$Touchstones= htmlspecialchars($_POST["Touchstones"]);
 }
 
-if (isset($_POST["Kith"])){
-    $Kith= htmlspecialchars($_POST["Kith"]);
+if (isset($_POST["Merits"])){
+    $Merits= htmlspecialchars($_POST["Merits"]);
     }
 
-if (isset($_POST["Name"])){
-$Name= htmlspecialchars($_POST["Name"]);
+if (isset($_POST["Needle"])){
+    $Needle= htmlspecialchars($_POST["Needle"]);
+    }
+if (isset($_POST["Thread"])){
+    $Thread= htmlspecialchars($_POST["Thread"]);
+    }
+
+if (isset($_POST["CharName"])){
+$CharName= htmlspecialchars($_POST["CharName"]);
 }
 
-$Wyrd= 1;
 /* three seperate queries handle the physical, social and mental skills*/
-$query= $dbConn->prepare("INSERT INTO major_traits(CharName, Seeming, Kith, Court) VALUES (?, ?, ?, ?) ");
-$params= array($Name, $Seeming, $Kith, $Court);
+$query= $dbConn->prepare("INSERT INTO narrative_traits(Aspirations, Merits, Touchstones, Needle, Thread, CharName) VALUES (?, ?, ?, ?, ?, ?) ");
+$params= array($Aspirations, $Merits, $Touchstones, $Needle, $Thread, $CharName);
 $query->execute($params);
 
 header('LOCATION:../views/selection_view.php');

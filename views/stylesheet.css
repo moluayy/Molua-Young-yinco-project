@@ -42,10 +42,12 @@
                   -2px -2px 0 #000;
     }
 /* styling for the Character Creation segments, incorperating official graphics*/
-    .creation{
+    .creation {
       background-image: url("ChangelingCover.png");
 
+        
         color: white;
+        height: 100%;
         font-family: ChangelingHeader;
         font-size: 30px;
         word-spacing: 15px;
@@ -56,8 +58,26 @@
                       -2px -2px 0 #000,
                       -2px -2px 0 #000,
                       -2px -2px 0 #000;
+        
         }
 
+        .creation3 {
+          background-image: url("ChangelingCover.png");
+    
+            
+            color: white;
+            min-height: 1200px;
+            font-family: ChangelingHeader;
+            font-size: 30px;
+            word-spacing: 15px;
+            letter-spacing: 14px;
+            /*in order for text to be legible, four shadows are used to give the appearance of a black outline*/
+            text-shadow: -2px -2px 0 #000,  
+                          -2px -2px 0 #000,
+                          -2px -2px 0 #000,
+                          -2px -2px 0 #000;
+            
+            }
         
 
       form{
@@ -74,6 +94,13 @@
         margin-left: 10px;
       }
       
+      input[type=text] {
+        padding: 20px 20px;
+        margin: 2px 0;
+        height: 15px
+      }
+
+
       h3, h2{
         text-align: center;
       }
@@ -85,7 +112,7 @@
       }
 
       .majorAtts{
-        width: 70%;
+        width: 90%;
         margin-left: auto;
         margin-right: auto; 
         text-align: center;

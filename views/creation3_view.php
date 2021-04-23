@@ -14,40 +14,41 @@
 </head>
 
 <body>
+<section >
+
     <main>
-        <section class="creation">
         
+
+        <form method ="post" action =../model/creation3_model.php class ="creation3">
         <h2>
             Repeat your character's name
         </h2>
-        <form method ="post" action =../model/creation3_model.php>
-
         Name
         <input type="text" name="CharName">
     <h2>
         Next, write down your aspirations, touchstones, Needle and Thread and merits
     </h2>
 
-    <label for="Aspirations">Aspirations:</label>
-    <input type="text" name="Aspirations">
+    Aspirations </br>
+    <input type="text" name="Aspirations"> </br>
 
-    <label for="Touchstones">Touchstones:</label>
-    <input type="text" name="Touchstones">
+    <label for="Touchstones">Touchstones:</label> </br>
+    <input type="text" name="Touchstones"> </br>
 
-    <label for="Merits">Merits:</label>
-    <input type="text" name="Merits">
+    <label for="Merits">Merits:</label></br>
+    <input type="text" name="Merits"> </br>
 
-    <label for="Needle">Needle:</label>
-    <input type="text" name="Needle">
+    <label for="Needle">Needle:</label></br>
+    <input type="text" name="Needle"> </br>
 
-        <label for="Thread">Thread:</label>
-    <input type="text" name="Needle">    
+        <label for="Thread">Thread:</label></br>
+    <input type="text" name="Thread"> </br>   
 
     ​<input type="submit" value="Submit">
 
         </form>
-        </section>
     </main>
+</section>
 
 </body>
 </html>
