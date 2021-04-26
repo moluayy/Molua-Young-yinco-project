@@ -24,7 +24,7 @@ require '../model/selection_model.php'
 
 <main>
         <section class= "ribbon">
-
+<!-- this captures the form value and sends it to the appropriate model for queries-->
         <form id="CharName" method="Post" action="../model/sheet_model.php" name= "CharName">
         <label for ="CharName"> Please Select a Character </label> <br>
          <select name="CharName" id="CharName">
@@ -32,7 +32,7 @@ require '../model/selection_model.php'
 <?php
  while($row = $query->fetch()) {
 ?>
-    <!-- this sets the value to the selected row's team id as taken from the database
+    <!-- this sets the value to the selected row's name as taken from the database
     and then fills in the rows using the query-->
         <option value="<?php echo $row["CharName"]; ?>"> 
         <?php echo $row["CharName"]; ?> 

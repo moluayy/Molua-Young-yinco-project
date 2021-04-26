@@ -1,5 +1,6 @@
 
 <?php
+//this functions as the other switches do, and for the same reasons
     switch ($_SESSION['Wyrd']) {
         case '1':
             echo "10/1";

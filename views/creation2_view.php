@@ -14,6 +14,8 @@
 </head>
 <body>
     <main>
+<!-- the name is repeated each time, to ensure a single variable can be used to retrieve data later on-->
+<!-- the name is repeated to avoid having session variables exist early in the process, as it could interfere with later logic-->
         <section class="creation">
         <h2>
             Repeat your character's name

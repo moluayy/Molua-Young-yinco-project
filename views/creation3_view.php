@@ -23,6 +23,7 @@
         <h2>
             Repeat your character's name
         </h2>
+<!-- the page behaves much as the previous two-->
         Name
         <input type="text" name="CharName">
     <h2>

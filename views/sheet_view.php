@@ -20,6 +20,8 @@ if (session_status() == PHP_SESSION_NONE) {
 </head>
 <body>
     <?php
+//this sheet functions by using the session variables set in the models to echo the values obtained from the database
+//and computing several derived traits using afforementioned values
     $Seeming = $_SESSION['Seeming'];
     $Court = $_SESSION['Court'];
     $Kith= $_SESSION['Kith'];
@@ -27,7 +29,6 @@ if (session_status() == PHP_SESSION_NONE) {
 
     $_SESSION['Stam']= "2";
     $_SESSION['Ath']= "3";
-
 
     ?>
 
@@ -53,6 +54,8 @@ if (session_status() == PHP_SESSION_NONE) {
         </tr>
 
         <tr>
+<!-- divs are used as the sections are non semantic, and only exist for formatting purposes- the div does not
+represent a real division within the sheet-->
             <td> Strength <div class= "rating"> <?php echo $_SESSION['Strength'] ?> </div> </td>
             <td> Presence <div class= "rating"> <?php echo $_SESSION['Presence'] ?> </div> </td>
             <td> Intelligence <div class= "rating"> <?php echo $_SESSION['Intelligence'] ?> </div> </td>
@@ -144,7 +147,8 @@ if (session_status() == PHP_SESSION_NONE) {
          </td>
        
         <td> 
-       
+<!-- several switches are used as there are multiple possible values for these variables, and each requires a length string
+to be of use to the player-->       
         <?php require 'seeming_blessing_switch.php' ?>
 
         </td>
@@ -157,6 +161,7 @@ if (session_status() == PHP_SESSION_NONE) {
         </table>
 
         <table class="majorAtts">
+
             <tr>
             <td> Willpower <?php echo $_SESSION['Resolve'] + $_SESSION['Composure']?> </td>
             <td> Health <?php echo $_SESSION['Stamina'] + 5?> </td>
@@ -181,8 +186,9 @@ if (session_status() == PHP_SESSION_NONE) {
     </section>
     </main>
 <?php
-//session_unset();
-//session_destroy();
+//this unsets all session variables to prevent confusion or errors when moving back to the character selection sheet
+session_unset();
+session_destroy();
 ?>
 </body>
 </html>

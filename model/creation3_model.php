@@ -18,7 +18,7 @@ if (session_status() == PHP_SESSION_NONE) {
 ?>
 
 <?php
-
+// again, input from forms is captured and posted to the database
 if (isset($_POST["Aspirations"])){
     $Aspirations= htmlspecialchars($_POST["Aspirations"]);
     }

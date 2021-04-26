@@ -20,7 +20,7 @@ $dbConn = new PDO($dsn, $username, $password);
 ?>
 
 <?php
-
+// this captures the relevant information for the loop to display all characters
 $query= $dbConn->prepare("SELECT * FROM major_traits");
 $query->execute();
 

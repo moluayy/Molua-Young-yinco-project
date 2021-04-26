@@ -1,5 +1,6 @@
 
 <?php
+//this functions as the seeming blessing switch
     switch ($Seeming) {
         case 'Beast':
             echo "

@@ -1,5 +1,8 @@
 
 <?php
+//this switch goes through each possible Court variable, and echoes a list of abilities a character may possess, alongside
+//the dicepool they have for said ability
+//it is contained in it's own file for space
     switch ($_SESSION['Court']) {
         case 'Spring':
             echo "<ul>";

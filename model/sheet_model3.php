@@ -17,7 +17,7 @@ if (session_status() == PHP_SESSION_NONE) {
 ?>
 
 <?php
-
+// as previously, session variables are set using values captured from the database
 $CharName = $_SESSION['CharName'];
 
 $query= $dbConn->prepare("SELECT * FROM contract_affinities WHERE CharName = ?");

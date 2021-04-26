@@ -17,7 +17,9 @@ if (session_status() == PHP_SESSION_NONE) {
 ?>
 
 <?php
-
+//two separate queries are used to gather information from the database and assign the values returned as session variables for
+//use in the character sheet.
+//two queries are used to make the code parsable
 $CharName = $_SESSION['CharName'];
 
 $query= $dbConn->prepare("SELECT * FROM attributes WHERE CharName = ?");

@@ -1,5 +1,8 @@
 
 <?php
+// this switch compares two session variables against a list of potential values, sending the appropriate abilities and dicepools
+//in response.
+//it is contained in it's own file to save on space
     switch ($_SESSION['SeemingReg']) {
         case 'Sword':
             echo "<ul>";

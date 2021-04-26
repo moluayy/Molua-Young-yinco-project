@@ -1,5 +1,7 @@
 
 <?php
+//this functions as the other switches, and is used for the same reasons
+// a header tag is echoed as well, to preserve semantics
     switch ($Seeming) {
         case 'Beast':
             echo " <h2> Blessing </h2>\r\n

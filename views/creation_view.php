@@ -14,6 +14,7 @@
 </head>
 <body>
     <main>
+<!-- this table captures basic character information and sends it to the model to be processed into a database-->
         <section class="creation">
         <h2>
             Choose Seeming and Court, then input Kith. Finally add your character's name!
@@ -54,7 +55,7 @@
     <h3>
         Physical
     </h3>
-    
+<!--this section of the table uses dropdown menus, as there is a limited range of possible values for the attributes-->
     <label for="Strength">Strength:</label>
         <select id="Strength" name="Strength">
         <option value=1>1</option>

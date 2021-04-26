@@ -17,7 +17,7 @@ if (session_status() == PHP_SESSION_NONE) {
 ?>
 
 <?php
-
+// this used the name from the selection sheet to gather matching information from the database
 $_SESSION['CharName']= $_POST['CharName'];
 $CharName= $_SESSION['CharName'];
 
