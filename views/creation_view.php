@@ -20,7 +20,7 @@
             Choose Seeming and Court, then input Kith. Finally add your character's name!
         </h2>
         <form method ="post" action =../model/creation1_model.php>
-       Seeming
+      <label for="Seeming"> Seeming </label>
         <select id="Seeming" name="Seeming">
         <option value="Fairest">Fairest</option>
         <option value="Beast">Beast</option>
@@ -29,7 +29,7 @@
         <option value="Ogre">Ogre</option>
         <option value="Wizened">Wizened</option>
         </select> </br>
-        Court 
+        <label for="Court"> Court </label>
         <select id="Court" name="Court">
         <option value="Spring">Spring</option>
         <option value="Summer">Summer</option>
@@ -40,7 +40,7 @@
         <label for="Kith">Kith:</label>
         <input type="text" name="Kith">
         </br>
-        Wyrd
+        <label for="Wyrd">Wyrd</label>
         <select id="Wyrd" name="Wyrd">
         <option value="1">1</option>
         <option value="2">2</option>
@@ -85,7 +85,7 @@
     <h3>
         Social
     </h3>
-        Presence
+        <label for="Presence">Presence</label>
         <select id="Presence" name="Presence">
         <option value=1>1</option>
         <option value=2>2</option>
@@ -94,7 +94,7 @@
         <option value=5>5</option>
         </select></br>
 
-        Manipulation
+        <label for="Manipulation">Manipulation</label>
         <select id="Manipulation" name="Manipulation">
         <option value=1>1</option>
         <option value=2>2</option>
@@ -103,7 +103,7 @@
         <option value=5>5</option>
         </select></br>
 
-        Composure
+        <label for="Composure">Composure</label>
         <select id="Composure" name="Composure">
         <option value=1>1</option>
         <option value=2>2</option>
@@ -116,7 +116,7 @@
         Mental
     </h3>
 
-        Intelligence
+    <label for="Intelligence">Intelligence</label>
         <select id="Intelligence" name="Intelligence">
         <option value=1>1</option>
         <option value=2>2</option>
@@ -125,7 +125,7 @@
         <option value=5>5</option>
         </select></br>
 
-        Wits
+        <label for="Wits">Wits</label>
         <select id="Wits" name="Wits">
         <option value=1>1</option>
         <option value=2>2</option>
@@ -134,7 +134,7 @@
         <option value=5>5</option>
         </select></br>
 
-        Resolve
+        <label for="Resolve">Resolve</table>
         <select id="Resolve" name="Resolve">
         <option value=1>1</option>
         <option value=2>2</option>

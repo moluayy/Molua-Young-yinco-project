@@ -24,13 +24,13 @@
             Repeat your character's name
         </h2>
 <!-- the page behaves much as the previous two-->
-        Name
+<label for="CharName">Name</label>
         <input type="text" name="CharName">
     <h2>
         Next, write down your aspirations, touchstones, Needle and Thread and merits
     </h2>
 
-    Aspirations </br>
+    <label for="Aspirations">Aspirations</label> </br>
     <input type="text" name="Aspirations"> </br>
 
     <label for="Touchstones">Touchstones:</label> </br>
@@ -42,7 +42,7 @@
     <label for="Needle">Needle:</label></br>
     <input type="text" name="Needle"> </br>
 
-        <label for="Thread">Thread:</label></br>
+    <label for="Thread">Thread:</label></br>
     <input type="text" name="Thread"> </br>   
 
     ​<input type="submit" value="Submit">

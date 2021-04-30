@@ -22,7 +22,7 @@
         </h2>
         <form method ="post" action =../model/creation2_model.php>
 
-        Name
+        <label for="Name">Name</label>
         <input type="text" name="Name">
     <h2>
         Next, add your ability dots!
@@ -31,7 +31,7 @@
     <h3>
         Physical
     </h3>
-        Athletics
+    <label for="Athletics">Athletics</label>
         <select id="Athletics" name="Athletics">
         <option value=1>1</option>
         <option value=2>2</option>
@@ -40,7 +40,7 @@
         <option value=5>5</option>
         </select></br>
 
-        Brawl
+        <label for="Brawl">Brawl</label>
         <select id="Brawl" name="Brawl">
         <option value=1>1</option>
         <option value=2>2</option>
@@ -49,7 +49,7 @@
         <option value=5>5</option>
         </select></br>
 
-        Drive
+        <label for="Drive">Drive</label>
         <select id="Drive" name="Drive">
         <option value=1>1</option>
         <option value=2>2</option>
@@ -58,7 +58,7 @@
         <option value=5>5</option>
         </select></br>
 
-        Firearms
+        <label for="Firearms">Firearms</label>
         <select id="Firearms" name="Firearms">
         <option value=1>1</option>
         <option value=2>2</option>
@@ -67,7 +67,7 @@
         <option value=5>5</option>
         </select></br>
         
-        Larceny
+        <label for="Larceny">Larceny</label>
         <select id="Larceny" name="Larceny">
         <option value=1>1</option>
         <option value=2>2</option>
@@ -77,7 +77,7 @@
         </select></br>
 
         
-        Stealth
+        <label for="Stealth">Stealth</label>
         <select id="Stealth" name="Stealth">
         <option value=1>1</option>
         <option value=2>2</option>
@@ -87,7 +87,7 @@
         </select></br>
 
         
-        Survival
+        <label for="Survival">Survival</table>
         <select id="Survival" name="Survival">
         <option value=1>1</option>
         <option value=2>2</option>
@@ -97,7 +97,7 @@
         </select></br>
 
         
-        Weaponry
+        <label for="Weaponry">Weaponry</label>
         <select id="Weaponry" name="Weaponry">
         <option value=1>1</option>
         <option value=2>2</option>
@@ -108,7 +108,7 @@
     <h3>
         Social
     </h3>
-        Animal Ken
+    <label for="AnimalKen">Animal Ken</label>
         <select id="AnimalKen" name="AnimalKen">
         <option value=1>1</option>
         <option value=2>2</option>
@@ -117,7 +117,7 @@
         <option value=5>5</option>
         </select></br>
 
-        Empathy
+        <label for="Empathy">Empathy</label>
         <select id="Empathy" name="Empathy">
         <option value=1>1</option>
         <option value=2>2</option>
@@ -126,7 +126,7 @@
         <option value=5>5</option>
         </select></br>
 
-        Expression
+        <label for="Expression">Expression</label>
         <select id="Expression" name="Expression">
         <option value=1>1</option>
         <option value=2>2</option>
@@ -135,7 +135,7 @@
         <option value=5>5</option>
         </select></br>
         
-        Intimidation
+        <label for="Intimidation">Intimidation</label>
         <select id="Intimidation" name="Intimidation">
         <option value=1>1</option>
         <option value=2>2</option>
@@ -144,7 +144,7 @@
         <option value=5>5</option>
         </select></br>
 
-        Persuasion
+        <label for="Persuasion">Persuasion</label>
         <select id="Persuasion" name="Persuasion">
         <option value=1>1</option>
         <option value=2>2</option>
@@ -153,7 +153,7 @@
         <option value=5>5</option>
         </select></br>
 
-        Socialize
+        <label for="Socialize">Socialize</label>
         <select id="Socialize" name="Socialize">
         <option value=1>1</option>
         <option value=2>2</option>
@@ -162,7 +162,7 @@
         <option value=5>5</option>
         </select></br>
 
-        Streetwise
+        <label for="Streetwise">Streetwise</label>
         <select id="Streetwise" name="Streetwise">
         <option value=1>1</option>
         <option value=2>2</option>
@@ -171,7 +171,7 @@
         <option value=5>5</option>
         </select></br>
 
-        Subterfuge
+        <label for="Subterfuge">Subterfuge</label>
         <select id="Subterfuge" name="Subterfuge">
         <option value=1>1</option>
         <option value=2>2</option>
@@ -185,7 +185,7 @@
         Mental
     </h3>
 
-        Academics
+    <label for="Academics">Academics</label>
         <select id="Academics" name="Academics">
         <option value=1>1</option>
         <option value=2>2</option>
@@ -194,7 +194,7 @@
         <option value=5>5</option>
         </select></br>
 
-        Computer
+        <label for="Computer">Computer</label>
         <select id="Computer" name="Computer">
         <option value=1>1</option>
         <option value=2>2</option>
@@ -203,7 +203,7 @@
         <option value=5>5</option>
         </select></br>
 
-        Crafts
+        <label for="Crafts">Crafts</label>
         <select id="Crafts" name="Crafts">
         <option value=1>1</option>
         <option value=2>2</option>
@@ -212,7 +212,7 @@
         <option value=5>5</option>
         </select></br>
         
-        Investigation
+        <label for="Investigation">Investigation</label>
         <select id="Investigation" name="Investigation">
         <option value=1>1</option>
         <option value=2>2</option>
@@ -221,7 +221,7 @@
         <option value=5>5</option>
         </select></br>
 
-        Medicine
+        <label for="Medicine">Medicine</label>
         <select id="Medicine" name="Medicine">
         <option value=1>1</option>
         <option value=2>2</option>
@@ -231,7 +231,7 @@
         </select></br>
 
         
-        Occult
+        <label for="Occult">Occult</label>
         <select id="Occult" name="Occult">
         <option value=1>1</option>
         <option value=2>2</option>
@@ -241,7 +241,7 @@
         </select></br>
 
 
-        Politics
+        <label for="Politics">Politics</label>
         <select id="Politics" name="Politics">
         <option value=1>1</option>
         <option value=2>2</option>
@@ -251,7 +251,7 @@
         </select></br>
 
         
-        Science
+        <label for="Science">Science</label>
         <select id="Science" name="Science">
         <option value=1>1</option>
         <option value=2>2</option>
@@ -264,7 +264,7 @@
         Select your Seeming Regalia, and a second favoured Regalia
     </h3>
 
-    Seeming Regalia
+    <label for="SeemingReg">Seeming Regalia</label>
     <select id="SeemingReg" name="SeemingReg">
         <option value=Sword>Sword</option>
         <option value=Crown>Crown</option>
@@ -274,7 +274,7 @@
         <option value=Steed>Steed</option>
         </select></br>
 
-    Favoured Regalia
+    <label for="FaveReg">Favoured Regalia</label>
     <select id="FaveReg" name="FaveReg">
         <option value=Sword>Sword</option>
         <option value=Crown>Crown</option>

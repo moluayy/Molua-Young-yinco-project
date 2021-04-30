@@ -183,12 +183,22 @@ to be of use to the player-->
                 <?php require 'court_switch.php' ?> </td>
             </tr>
         </table>
+
+        <form class= "DiceRoller"  method ="post" action =>
+        <label for="DicePool"> Dice Roller </label>
+        <input type="text" id="DicePool" name="DicePool">
+        ​<input type="submit" value="Submit">
+
+        <?php require_once 'dice-roller.php';
+        if (isset($_POST['DicePool'])) diceroller($Pool) ; ?>
+        </form>
+
     </section>
     </main>
 <?php
 //this unsets all session variables to prevent confusion or errors when moving back to the character selection sheet
-session_unset();
-session_destroy();
+//session_unset();
+//session_destroy();
 ?>
 </body>
 </html>

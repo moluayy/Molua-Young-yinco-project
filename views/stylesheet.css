@@ -105,11 +105,17 @@
         height: 15%;
       }
 
-      .majorAtts{
+      .majorAtts, .DiceRoller{
         width: 90%;
         margin-left: auto;
         margin-right: auto; 
         text-align: center;
+      }
+      .majorAtts input, .DiceRoller input{
+        float:left;
+      }
+      .DiceRoller{
+        text-align: left;
       }
       .sheet{
         background-color: #28430a;
