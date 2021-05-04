@@ -1,7 +1,7 @@
 
 <?php
 //this functions loops a number of times equal to the dicepool, creating a random integer each time
-//this integer represents a 10-sided dice
+//this integer represents a random face of a 10-sided dice
 //if this number ($dice) is 8-10, $success is increased
 //it then echoes $success final value at the end
 
