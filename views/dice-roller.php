@@ -26,10 +26,11 @@ function diceRoller($Pool) {
     }
       };
       if ($success == 0) {
-          echo 'You failed';
+          echo '<script>alert("You Failed")</script>';
+          
       }
       else 
-        echo 'You get ' . $success . ' successes';
+        echo '<script>alert("You get ' . $success . ' successes")</script>';
   }    
 }       
 

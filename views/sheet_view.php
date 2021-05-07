@@ -128,10 +128,10 @@ represent a real division within the sheet-->
         <table class="majorAtts">
 
         <tr>
-            <td> Needle:<?php echo $_SESSION['Needle']?> </td>
-            <td> Thread: <?php echo $_SESSION['Thread']?> </td>
-            <td> Wyrd: <?php echo $_SESSION['Wyrd']?> </td>
-            <td> Clarity Cap: <?php echo $_SESSION['Resolve'] + $_SESSION['Composure']?> </td>
+            <td> Needle:</br><?php echo $_SESSION['Needle']?> </td>
+            <td> Thread:</br> <?php echo $_SESSION['Thread']?> </td>
+            <td> Wyrd:</br> <?php echo $_SESSION['Wyrd']?> </td>
+            <td> Clarity Cap:</br> <?php echo $_SESSION['Resolve'] + $_SESSION['Composure']?> </td>
         </tr>
 
         </table>
@@ -160,7 +160,7 @@ to be of use to the player-->
 
         </table>
 
-        <table class="majorAtts">
+        <table class="DerivedAtts">
 
             <tr>
             <td> Willpower <?php echo $_SESSION['Resolve'] + $_SESSION['Composure']?> </td>
@@ -175,7 +175,6 @@ to be of use to the player-->
             <tr>
                 <td> <h2> Arcadian Contracts</h2> </br> 
                 <?php echo $_SESSION['SeemingReg'] . ", " . $_SESSION['FaveReg'] ?> </br>
-                <?php echo $_SESSION['Stam'] + $_SESSION['Ath']; ?> </br>
                 <?php require 'regalia_switch.php' ?> </td>
 
                 <td> <h2> Court Contracts </h2> </br>

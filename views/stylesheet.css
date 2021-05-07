@@ -31,7 +31,7 @@
     font-family: ChangelingBody;
     font-size: 30px;
     word-spacing: 15px;
-    letter-spacing: 14px;
+    letter-spacing: 10px;
     height:100%;
     padding-top: 70px;
     height:600px;
@@ -50,7 +50,7 @@
         font-family: ChangelingBody;
         font-size: 30px;
         word-spacing: 15px;
-        letter-spacing: 14px;
+        letter-spacing: 10px;
         width:100%;
         /*in order for text to be legible, four shadows are used to give the appearance of a black outline*/
         text-shadow: -2px -2px 0 #000,  
@@ -70,7 +70,7 @@
             font-family: ChangelingBody;
             font-size: 30px;
             word-spacing: 15px;
-            letter-spacing: 14px;
+            letter-spacing: 10px;
             /*in order for text to be legible, four shadows are used to give the appearance of a black outline*/
             text-shadow: -2px -2px 0 #000,  
                           -2px -2px 0 #000,
@@ -110,7 +110,7 @@
 /*this styles the smaller sections of the character sheet*/
       .majorAtts, .DiceRoller{
         font-family: ChangelingHeader;
-        width: 90%;
+        width: 95%;
         margin-left: auto;
         margin-right: auto; 
         text-align: center;
@@ -128,7 +128,7 @@
           font-family: ChangelingBody;
           font-size: 150%;
           word-spacing: 15px;
-          letter-spacing: 14px;
+          letter-spacing: 10px;
           list-style-type:none;
           /*in order for text to be legible, four shadows are used to give the appearance of a black outline*/
           text-shadow: 2px 2px 0 #0f0c08, 2px 2px 0 #0f0c08, 2px 2px 0 #0f0c08, -1px -1px 0 #0f0c08;
@@ -166,6 +166,8 @@
         text-align:left;
         margin-left: auto;
         margin-right: auto; 
+        padding-left: 2%;
+        padding-right: 2%;
       }
 
       .merits td{
@@ -174,5 +176,19 @@
 
       .merits h2{
         text-align:left;
+      }
+
+      /*this specifically styles the derived section of the character sheet
+      as it contains somewhat larger text*/
+      .DerivedAtts td{
+        font-size: 70%;
+        font-family: ChangelingHeader;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto; 
+        text-align: center;
+        padding-left: 2% ;
+        padding-right: 2% ;
+
       }
     
